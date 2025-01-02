@@ -1,0 +1,25 @@
+#one {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper,
+.lower {
+  display: flex;
+  width: 100vw;
+}
+
+.upper{
+    height: 40vh;
+}
+
+.lower{
+    height: 60vh;
+}
+
+.block {
+  border: 1px solid var(--white);
+  height: 100%;
+  width: 100%;
+}
+

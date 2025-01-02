@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Raleway:wght@400;600;700&family=Lato:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Raleway:wght@400;600;700&family=Lato:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap");
 
 /*
 * Poppins: For headers or areas needing modern and clean typography.
@@ -9,15 +8,58 @@
 * Open Sans: Neutral and highly readable, excellent for general content.
 */
 
-
-:root{
+:root {
   --black: #000;
-  --yellow: #FFD700;
-  --white: #FFF;
-  --blue: #1E90FF;
+  --yellow: #ffd700;
+  --white: #fff;
+  --blue: #1e90ff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory; /* Enable scroll snapping */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.page {
+  flex: 0 0 100vw; /* Make each page take 100vw width */
+  height: 100vh; /* Full viewport height */
+  scroll-snap-align: start; /* Snap to the start of each page */
+}
+
+#one {
   background-color: var(--black);
+}
+
+#two {
+  background-color: var(--yellow);
+}
+
+#three {
+  background-color: var(--blue);
+}
+
+#four {
+  background-color: var(--white);
 }
